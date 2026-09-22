@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* Bioluminescent Ocean Cybersecurity Theme */
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
+  }
+}
+
+.animate-bobbing {
+  animation: bobbing 3.4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.75));
+  }
+}
+
+.animate-hook-pulse {
+  animation: pulse-glow 2.8s ease-in-out infinite;
+}
+
+@keyframes radar-ripple {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-radar-ripple {
+  animation: radar-ripple 3.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes ambient-float-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -25px) scale(1.08);
+  }
+}
+
+@keyframes ambient-float-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 35px) scale(0.92);
+  }
+}
+
+.animate-orb-teal {
+  animation: ambient-float-1 12s ease-in-out infinite alternate;
+}
+
+.animate-orb-violet {
+  animation: ambient-float-2 15s ease-in-out infinite alternate;
+}
+
+/* Custom modern bioluminescent scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050811;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.4);
+}

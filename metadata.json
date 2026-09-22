@@ -1,0 +1,6 @@
+{
+  "name": "ScamShield AI",
+  "description": "Elite cybersecurity, anti-phishing, and document fraud detection engine with explainable threat scoring for employment contracts, job offers, and rental agreements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
